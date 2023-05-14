@@ -1,8 +1,7 @@
-import dataEndpoint from './data.endpoint.js';
+import userEndpoint from "./user.endpoint";
 
-const routes = function (router)
-{
- dataEndpoint(router);
- };
+const routes = function (router) {
+  userEndpoint(router);
+};
 
- export default routes;
+export default routes;
