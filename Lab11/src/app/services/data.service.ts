@@ -17,6 +17,10 @@ export class DataService {
   getById(id: string) {
     return this.http.get(this.url + '/api/posts/' + id);
     }
+
+  addPost(data : any){
+    return this.http.post(this.url + "/api/post",data);
+  }
   
 }
 
